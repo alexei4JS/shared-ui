@@ -1,0 +1,26 @@
+<ng-template appPlaceholder></ng-template>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="el-container">
+            <div 
+                class="btn-group"
+                appDropdown>
+                <button type="button" class="btn btn-primary dropdown-toggle">Manage<span class="caret"> </span></button>
+                <ul class="dropdown-menu">
+                    <li><a (click)="showErrorAlert('Dropdown Error №1 Occured!')">Emit Dropdown Error №1</a></li>
+                    <li><a (click)="showErrorAlert('Dropdown Error №2 Occured!')">Emit Dropdown Error №2</a></li>
+                    <li><a (click)="showErrorAlert()">Emit Unknown Error</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12">
+        <div class="el-container">
+            <button class="btn btn-danger" (click)="emitError()">Emit New Error</button>
+        </div>
+    </div>
+</div>
+
+
